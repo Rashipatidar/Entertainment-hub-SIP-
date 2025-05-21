@@ -1,0 +1,48 @@
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .main-nav ul {
+        display: none;
+    }
+
+    .mobile-menu-btn {
+        display: block;
+    }
+
+    .hero {
+        padding-left: 20px;
+        height: 60vh;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .row-container {
+        padding: 0 10px;
+        gap: 10px;
+    }
+
+    .content-item {
+        width: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-buttons .btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .search-container {
+        width: 100px;
+    }
+
+    #search-input {
+        width: 80px;
+        font-size: 12px;
+    }
+}

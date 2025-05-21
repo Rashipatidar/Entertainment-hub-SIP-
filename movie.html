@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Witcher | Netflix Clone</title>
+    <meta name="description" content="Watch The Witcher on Netflix Clone">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body class="movie-page">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <header class="main-header" role="banner">
+        <div class="header-left">
+            <h1 class="visually-hidden">Netflix</h1>
+            <img src="Image/netflix-logo.png" alt="Netflix" class="logo">
+            <nav class="main-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">TV Shows</a></li>
+                    <li><a href="#">Movies</a></li>
+                    <li><a href="#">New & Popular</a></li>
+                    <li><a href="#">My List</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-right">
+            <div class="search-container">
+                <label for="search" class="visually-hidden">Search</label>
+                <input type="text" id="search" placeholder="Titles, people, genres">
+                <button class="search-button" aria-label="Search">
+                    <span class="visually-hidden">Search</span>
+                    🔍
+                </button>
+            </div>
+            <div class="profile-menu">
+                <button class="profile-button" aria-label="Account menu">
+                    <img src="Image/profile-icon.svg" alt="" aria-hidden="true">
+                </button>
+                <div class="dropdown-menu" role="menu">
+                    <ul>
+                        <li><a href="#" role="menuitem">Account</a></li>
+                        <li><a href="#" role="menuitem">Help Center</a></li>
+                        <li><a href="#" role="menuitem" id="signOut">Sign out of Netflix</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content" tabindex="-1" role="main">
+        <section class="movie-hero">
+            <div class="hero-backdrop"></div>
+            <div class="hero-content">
+                <h2>The Witcher</h2>
+                <div class="movie-meta">
+                    <span class="match">95% Match</span>
+                    <span class="year">2021</span>
+                    <span class="age">18+</span>
+                    <span class="seasons">2 Seasons</span>
+                    <span class="quality">HD</span>
+                </div>
+                <div class="hero-buttons">
+                    <img src="Image/movie2.jpeg" 
+                             alt="Kaer Morhen witcher stronghold exterior"
+                             loading="lazy">
+                    <button class="btn btn-play">▶ Play</button>
+                    <button class="btn btn-download">↓ Download</button>
+                    <button class="btn btn-add" aria-label="Add to my list">+</button>
+                    <button class="btn btn-like" aria-label="Rate this show">👍</button>
+                </div>
+                <p class="movie-description">Geralt of Rivia, a mutated monster-hunter for hire, journeys toward his destiny in a turbulent world where people often prove more wicked than beasts.</p>
+                <div class="movie-details">
+                    <p><strong>Starring:</strong> Henry Cavill, Anya Chalotra, Freya Allan</p>
+                    <p><strong>Creators:</strong> Lauren Schmidt Hissrich</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="episodes-section" aria-label="Season 2 episodes">
+            <h3>Season 2</h3>
+            <div class="episodes-container">
+                <!-- Episode 1 -->
+                <div class="episode" role="article" tabindex="0">
+                    <div class="episode-image">
+                        <img src="Image/ep1.avif" 
+                             alt="Geralt and Ciri walking through forest"
+                             loading="lazy">
+                        <button class="btn-play-episode" aria-label="Play Episode 1: A Grain of Truth">
+                            ▶
+                        </button>
+                    </div>
+                    <div class="episode-info">
+                        <h4>1. A Grain of Truth</h4>
+                        <p>Geralt and Ciri take refuge with an old friend who may not be as friendly as they remember. Yennefer tries to escape her past.</p>
+                    </div>
+                </div>
+
+                <!-- Episode 2 -->
+                <div class="episode" role="article" tabindex="0">
+                    <div class="episode-image">
+                        <img src="Image/ep2.avif" 
+                             alt="Kaer Morhen witcher stronghold exterior"
+                             loading="lazy">
+                        <button class="btn-play-episode" aria-label="Play Episode 2: Kaer Morhen">
+                            ▶
+                        </button>
+                    </div>
+                    <div class="episode-info">
+                        <h4>2. Kaer Morhen</h4>
+                        <p>Geralt brings Ciri to the witchers' stronghold where they face new dangers and uncover secrets about her powers.</p>
+                    </div>
+                </div>
+
+                <!-- Episode 3 -->
+                <div class="episode" role="article" tabindex="0">
+                    <div class="episode-image">
+                        <img src="Image/ep3.jpeg" 
+                             alt="Ciri having nightmares in bed"
+                             loading="lazy">
+                        <button class="btn-play-episode" aria-label="Play Episode 3: What Is Lost">
+                            ▶
+                        </button>
+                    </div>
+                    <div class="episode-info">
+                        <h4>3. What Is Lost</h4>
+                        <p>Ciri struggles with her nightmares while Geralt seeks answers about her powers and their connection to the mysterious monoliths.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="more-like-this" aria-label="More like this">
+            <h3>More Like This</h3>
+            <div class="content-row">
+                <div class="content-item" tabindex="0" role="article">
+                    <img src="Image/movie1.jpeg" alt="Shadow and Bone series cover">
+                    <div class="item-hover">
+                        <div class="hover-buttons">
+                            <button class="btn-play-small" aria-label="Play Shadow and Bone">▶</button>
+                            <button class="btn-add" aria-label="Add to my list">+</button>
+                            <button class="btn-like" aria-label="Rate this show">👍</button>
+                        </div>
+                        <div class="item-info">
+                            <span class="match">94% Match</span>
+                            <span class="age">16+</span>
+                            <span class="duration">2 Seasons</span>
+                        </div>
+                        <div class="item-genres">
+                            <span>Fantasy</span>
+                            <span>Adventure</span>
+                            <span>Drama</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- More content items would go here -->
+            </div>
+        </section>
+    </main>
+
+    <script src="main.js"></script>
+    <script src="browse.js"></script>
+    <script src="auth.js"></script>
+</body>
+</html>

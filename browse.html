@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone - Browse</title>
+    <meta name="description" content="Browse Netflix movies and TV shows">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body class="browse-page">
+    <!-- Skip to Content Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <header class="main-header">
+        <div class="header-left">
+            <img src="Image/netflix-logo.png" alt="Netflix" class="logo">
+            <nav class="main-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="#" class="active" aria-current="page">Home</a></li>
+                    <li><a href="#">TV Shows</a></li>
+                    <li><a href="#">Movies</a></li>
+                    <li><a href="#">New & Popular</a></li>
+                    <li><a href="#">My List</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-right">
+            <div class="search-container">
+                <label for="search-input" class="visually-hidden">Search titles</label>
+                <input type="text" id="search-input" placeholder="Titles, people, genres">
+                <button class="search-button" aria-label="Search">
+                    <span class="search-icon">🔍</span>
+                </button>
+            </div>
+            <div class="profile-menu">
+                <button class="profile-button" aria-label="Account menu" aria-expanded="false">
+                    <img src="Image/profile-icon.svg" alt="" aria-hidden="true">
+                </button>
+                <div class="dropdown-menu" aria-hidden="true">
+                    <ul>
+                        <li><a href="#">Account</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#" id="signOut">Sign out of Netflix</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <button class="mobile-menu-btn" aria-label="Open menu">☰</button>
+    </header>
+
+    <main id="main-content">
+        <!-- Hero Banner Section -->
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-content">
+                <h1 id="hero-title">Stranger Things</h1>
+                <div class="hero-buttons">
+                    <button class="btn btn-play" aria-label="Play Stranger Things">▶ Play</button>
+                    <button class="btn btn-info" aria-label="More info about Stranger Things">ℹ More Info</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Content Rows Section -->
+        <section class="content-section">
+            <h2 class="section-title">Popular on Netflix</h2>
+            <div class="row-container">
+                <!-- Movie 1 -->
+                <article class="content-item" tabindex="0" data-id="1">
+                    <div class="item-image-container">
+                        <img src="Image/movie1.jpeg" alt="Stranger Things poster" class="content-image" loading="lazy">
+                        <div class="item-hover">
+                            <div class="hover-buttons">
+                                <button class="btn-play-small" aria-label="Play">▶</button>
+                                <button class="btn-add" aria-label="Add to my list">+</button>
+                                <button class="btn-like" aria-label="Like this title">👍</button>
+                            </div>
+                            <div class="item-info">
+                                <span class="match">98% Match</span>
+                                <span class="age">16+</span>
+                                <span class="duration">2h 15m</span>
+                            </div>
+                            <div class="item-genres">
+                                <span>Action</span>
+                                <span>Adventure</span>
+                                <span>Sci-Fi</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Movie 2 -->
+                <article class="content-item" tabindex="0" data-id="2">
+                    <div class="item-image-container">
+                        <img src="Image/movie2.jpeg" alt="The Witcher poster" class="content-image" loading="lazy">
+                        <div class="item-hover">
+                            <div class="hover-buttons">
+                                <button class="btn-play-small" aria-label="Play">▶</button>
+                                <button class="btn-add" aria-label="Add to my list">+</button>
+                                <button class="btn-like" aria-label="Like this title">👍</button>
+                            </div>
+                            <div class="item-info">
+                                <span class="match">95% Match</span>
+                                <span class="age">18+</span>
+                                <span class="duration">1h 52m</span>
+                            </div>
+                            <div class="item-genres">
+                                <span>Fantasy</span>
+                                <span>Action</span>
+                                <span>Drama</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Movie 3 -->
+                <article class="content-item" tabindex="0" data-id="3">
+                    <div class="item-image-container">
+                        <img src="Image/movie3.webp" alt="Money Heist poster" class="content-image" loading="lazy">
+                        <div class="item-hover">
+                            <div class="hover-buttons">
+                                <button class="btn-play-small" aria-label="Play">▶</button>
+                                <button class="btn-add" aria-label="Add to my list">+</button>
+                                <button class="btn-like" aria-label="Like this title">👍</button>
+                            </div>
+                            <div class="item-info">
+                                <span class="match">97% Match</span>
+                                <span class="age">16+</span>
+                                <span class="duration">2h 10m</span>
+                            </div>
+                            <div class="item-genres">
+                                <span>Crime</span>
+                                <span>Drama</span>
+                                <span>Thriller</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Movie 4 -->
+                <article class="content-item" tabindex="0" data-id="4">
+                    <div class="item-image-container">
+                        <img src="Image/movie4.jpg" alt="Breaking Bad poster" class="content-image" loading="lazy">
+                        <div class="item-hover">
+                            <div class="hover-buttons">
+                                <button class="btn-play-small" aria-label="Play">▶</button>
+                                <button class="btn-add" aria-label="Add to my list">+</button>
+                                <button class="btn-like" aria-label="Like this title">👍</button>
+                            </div>
+                            <div class="item-info">
+                                <span class="match">99% Match</span>
+                                <span class="age">18+</span>
+                                <span class="duration">2h 30m</span>
+                            </div>
+                            <div class="item-genres">
+                                <span>Drama</span>
+                                <span>Crime</span>
+                                <span>Thriller</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Movie 5 -->
+                <article class="content-item" tabindex="0" data-id="5">
+                    <div class="item-image-container">
+                        <img src="Image/movie5.jpg" alt="The Crown poster" class="content-image" loading="lazy">
+                        <div class="item-hover">
+                            <div class="hover-buttons">
+                                <button class="btn-play-small" aria-label="Play">▶</button>
+                                <button class="btn-add" aria-label="Add to my list">+</button>
+                                <button class="btn-like" aria-label="Like this title">👍</button>
+                            </div>
+                            <div class="item-info">
+                                <span class="match">96% Match</span>
+                                <span class="age">16+</span>
+                                <span class="duration">2h 05m</span>
+                            </div>
+                            <div class="item-genres">
+                                <span>Drama</span>
+                                <span>History</span>
+                                <span>Biography</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Additional Content Rows -->
+        <section class="content-section">
+            <h2 class="section-title">Trending Now</h2>
+            <div class="row-container">
+                <!-- Similar content items would go here -->
+            </div>
+        </section>
+        
+        <section class="content-section">
+            <h2 class="section-title">Continue Watching</h2>
+            <div class="row-container">
+                <!-- Similar content items would go here -->
+            </div>
+        </section>
+    </main>
+
+    <script src="browse.js"></script>
+</body>
+</html>
